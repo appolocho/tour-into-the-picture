@@ -10,9 +10,12 @@ TARGET = TIP
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp
+SOURCES += main.cpp \
+    window.cpp \
+    widget.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    window.h \
+    widget.h
 
-FORMS    += mainwindow.ui
+FORMS    +=
