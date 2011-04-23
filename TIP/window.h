@@ -1,6 +1,7 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
+#include "widget.h"
 #include <QWidget>
 
 /*
@@ -15,11 +16,17 @@ class Window : public QWidget
 
 public:
     Window();
+    Widget* widget;
+
+private slots:
+    void chooseBackground();
+    void chooseForeground();
+    //void placeVanishing();
 
 private:
     QPushButton* quitButton; // button to quit program
     QPushButton* loadBackButton; // button to load background image
-    QPushButton* saveButton; // button to save image
+    //QPushButton* saveButton; // button to save image
     QPushButton* loadForeButton; // button to load foreground objects
     QPushButton* placeVanButton; // button to place vanishing point
     QPushButton* placeBackButton; // button to place background box
